@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  word: MyString
+  rank: 1
+  type: 
+  dispersion: 9.99
+  level: 1
+  translation: MyString
+
+two:
+  word: MyString
+  rank: 1
+  type: 
+  dispersion: 9.99
+  level: 1
+  translation: MyString

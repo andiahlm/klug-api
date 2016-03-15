@@ -21,7 +21,6 @@ Rails.application.routes.draw do
 
   post 'userwords/add', to: 'userwords#add'
 
-  get 'medium', to: 'translations#translate'
 
   
 

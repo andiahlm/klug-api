@@ -11,7 +11,7 @@ class MediaController < ApplicationController
   end
 
   def show
-    respond_with Medium.find(params[:id])
+    respond_with Medium.find(params[:id]), :except => [:created_at, :updated_at]
   end
 
   def update
@@ -70,6 +70,6 @@ class MediaController < ApplicationController
 
   private
   def post_params
-    params.require(:medium).permit(:name, :mediatype, :url, :identifier, :transcript)
+    params.require(:medium).permit(:id, :name, :mediatype, :url, :identifier, :transcript)
   end
 end

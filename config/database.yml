@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
+  #url: <%= ENV['HEROKU_DB_URL'] %>
   url: postgres://ujogcxatdwpqgu:QWEW0F6yUi0msQeugnTU0tdYXW@ec2-107-20-136-89.compute-1.amazonaws.com:5432/de6t4ogvgb2ecp
 
   # database: klug_production
